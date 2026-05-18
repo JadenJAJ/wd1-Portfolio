@@ -1,0 +1,419 @@
+@media (max-width: 900px) {
+  :root {
+    --header-h: 35px;
+  }
+
+  body {
+    cursor: auto;
+  }
+
+  .cursor-dot {
+    display: none;
+  }
+
+  .site-header {
+    height: var(--header-h);
+    padding: 0 8px;
+  }
+
+  .brand {
+    font-size: 12px;
+  }
+
+  .site-nav {
+    gap: 21px;
+    padding-right: 0;
+  }
+
+  .site-nav a {
+    font-size: 12px;
+  }
+
+  .home-hero {
+    height: 135px;
+  }
+
+  .hero-inner {
+    width: 100%;
+  }
+
+  .sonic {
+    left: 31px;
+    bottom: 23px;
+    width: 58px;
+  }
+
+  .hero-title-wrap {
+    top: 51px;
+    width: 310px;
+  }
+
+  .hero-title-wrap h1 {
+    font-size: 31px;
+  }
+
+  .hero-title-wrap p {
+    margin-top: 3px;
+    font-size: 16px;
+  }
+
+  .pixel-hearts {
+    transform: scale(.48);
+  }
+
+  .hearts-left {
+    left: 17px;
+    top: -29px;
+  }
+
+  .hearts-right {
+    right: 15px;
+    top: -29px;
+    transform: scaleX(-1) scale(.48);
+  }
+
+  .home-about {
+    min-height: 309px;
+    padding-top: 28px;
+  }
+
+  .home-about-grid {
+    width: 350px;
+    grid-template-columns: 158px 166px;
+    gap: 26px;
+  }
+
+  .about-intro {
+    padding-top: 28px;
+  }
+
+  .about-intro h2 {
+    font-size: 25px;
+    margin-bottom: 17px;
+  }
+
+  .about-intro p {
+    font-size: 12px;
+    line-height: 1.04;
+  }
+
+  .pink-pill {
+    margin-top: 15px;
+    width: 88px;
+    height: 25px;
+    font-size: 8px;
+  }
+
+  .portrait-frame {
+    width: 166px;
+    height: 219px;
+    border-radius: 41px;
+  }
+
+  .home-projects {
+    padding: 59px 0 3px;
+  }
+
+  .home-projects h2 {
+    font-size: 33px;
+    margin-bottom: 35px;
+  }
+
+  .home-project-list {
+    width: 250px;
+  }
+
+  .home-project-card {
+    margin-bottom: 57px;
+  }
+
+  .home-project-card img,
+  .home-project-card:first-child img,
+  .home-project-card:nth-child(2) img,
+  .home-project-card:nth-child(3) img {
+    width: 250px;
+    height: auto;
+  }
+
+  .home-project-card:first-child img {
+    height: 354px;
+  }
+
+  .home-project-card:nth-child(2) img {
+    height: 324px;
+  }
+
+  .home-project-card:nth-child(3) img {
+    height: 250px;
+  }
+
+  .home-project-card h3 {
+    margin-top: 18px;
+    font-size: 19px;
+  }
+
+  .contact-panel {
+    min-height: 292px;
+    padding-top: 33px;
+  }
+
+  .contact-home {
+    min-height: 298px;
+  }
+
+  .contact-panel h2 {
+    font-size: 30px;
+    margin-bottom: 26px;
+  }
+
+  .contact-form {
+    width: 207px;
+    gap: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+  .contact-form input {
+    height: 30px;
+    padding: 0 13px;
+  }
+
+  .contact-form textarea {
+    height: 64px;
+    padding: 10px 13px;
+  }
+
+  .contact-form button {
+    width: 116px;
+    height: 25px;
+    margin-top: 0;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+
+  .title-band {
+    height: 174px;
+  }
+
+  .title-with-hearts {
+    min-width: 250px;
+  }
+
+  .title-with-hearts h1 {
+    font-size: 36px;
+  }
+
+  .title-with-hearts .hearts-left {
+    left: 24px;
+    top: -40px;
+  }
+
+  .title-with-hearts .hearts-right {
+    right: 24px;
+    top: -40px;
+  }
+
+  .about-name {
+    min-height: 520px;
+    padding-top: 22px;
+  }
+
+  .about-name h2 {
+    font-size: 31px;
+    margin-bottom: 20px;
+  }
+
+  .about-name img {
+    width: 277px;
+    height: 418px;
+  }
+
+  .goals {
+    min-height: 382px;
+    padding-top: 57px;
+  }
+
+  .goals h2,
+  .experience h2,
+  .education h2 {
+    font-size: 38px;
+  }
+
+  .goals p {
+    width: 340px;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  .experience {
+    min-height: 279px;
+    padding-top: 40px;
+  }
+
+  .experience div {
+    width: 330px;
+    margin-left: 24px;
+  }
+
+  .experience h3 {
+    margin-top: 11px;
+    font-size: 18px;
+  }
+
+  .experience p {
+    margin-top: 25px;
+    font-size: 16px;
+  }
+
+  .education {
+    min-height: 311px;
+    padding-top: 40px;
+  }
+
+  .education div {
+    width: 330px;
+    margin-right: 24px;
+  }
+
+  .education h3 {
+    margin-top: 14px;
+    font-size: 17px;
+  }
+
+  .education p {
+    font-size: 16px;
+  }
+
+  .education h3:nth-of-type(2) {
+    margin-top: 48px;
+  }
+
+  .projects-detail {
+    padding: 29px 0 22px;
+  }
+
+  .project-row,
+  .project-row-flip {
+    width: 348px;
+    margin-bottom: 82px;
+    grid-template-columns: 180px 1fr;
+    gap: 22px;
+  }
+
+  .project-row-flip {
+    grid-template-columns: 1fr 185px;
+    gap: 24px;
+  }
+
+  .project-row img,
+  .project-row:first-child img,
+  .project-row:nth-child(2) img,
+  .project-row:nth-child(3) img {
+    width: 186px;
+    height: auto;
+  }
+
+  .project-row:first-child img {
+    height: 263px;
+  }
+
+  .project-row:nth-child(2) img {
+    width: 185px;
+    height: 240px;
+  }
+
+  .project-row:nth-child(3) img {
+    width: 189px;
+    height: 189px;
+  }
+
+  .project-row h2,
+  .project-row-flip h2 {
+    width: auto;
+    margin-top: 4px;
+    font-size: 16px;
+  }
+
+  .project-row p,
+  .project-row-flip p {
+    width: auto;
+    margin-top: 38px;
+    font-size: 12px;
+    line-height: 1.08;
+  }
+
+  .project-row-flip p {
+    text-align: left;
+  }
+
+  .resume {
+    min-height: 532px;
+    padding-top: 66px;
+  }
+
+  .resume h2 {
+    font-size: 39px;
+    margin-bottom: 44px;
+  }
+
+  .resume img {
+    width: 280px;
+    height: 363px;
+  }
+
+  .contact-standalone {
+    height: calc(100vh - var(--header-h));
+    min-height: 600px;
+    padding-top: 101px;
+  }
+
+  .contact-standalone h1 {
+    font-size: 60px;
+    margin-bottom: 76px;
+  }
+
+  .contact-large {
+    width: 300px;
+    gap: 51px;
+  }
+
+  .contact-large input {
+    height: 45px;
+    font-size: 25px;
+    padding-left: 18px;
+  }
+
+  .contact-large textarea {
+    height: 95px;
+    font-size: 25px;
+    padding: 12px 18px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  body {
+    cursor: auto;
+  }
+
+  .cursor-dot {
+    display: none;
+  }
+
+  .home-about-grid,
+  .project-row {
+    transform: scale(.82);
+    transform-origin: top center;
+  }
+
+  .home-about {
+    min-height: 910px;
+  }
+
+  .projects-detail {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jaden Johnson Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand nav-link" href="#home" data-route="home">JADEN JOHNSON</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="#about" data-route="about">About</a>
+        <a class="nav-link" href="#projects" data-route="projects">Projects</a>
+        <a class="nav-link" href="#contact" data-route="contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="app" tabindex="-1">
+      <section class="page page-home" data-page="home" aria-labelledby="home-title">
+        <section class="home-hero purple-grid">
+          <div class="hero-inner">
+            <img class="sonic" src="assets/images/sonic.gif" alt="Pixel Sonic character">
+            <div class="hero-title-wrap">
+              <div class="pixel-hearts hearts-left" aria-hidden="true"><span></span><span></span></div>
+              <h1 id="home-title">JADEN JOHNSON</h1>
+              <div class="pixel-hearts hearts-right" aria-hidden="true"><span></span><span></span></div>
+              <p>GRAPHIC DESIGN PORTFOLIO</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="home-about panel-dark">
+          <div class="home-about-grid">
+            <article class="about-intro">
+              <h2>ABOUT ME</h2>
+              <p>
+                My name is <strong>Jaden Johnson</strong>, my goal is to become a product designer and developer both front and little of back for websites and Mobile apps. I hope to learn more deeply in HTML, CSS, and JavaScript to upgrade my skills. My hobbies are learning to things that are going on in tech such as AI and how I can integrate it into my career and learning more deeply about ChatGPT, Claude Code, and other AI tools.
+              </p>
+              <a class="pink-pill" href="#about" data-route="about">VIEW MORE</a>
+            </article>
+            <figure class="portrait-frame">
+              <img src="assets/images/portrait.jpg" alt="Portrait of Jaden Johnson">
+            </figure>
+          </div>
+        </section>
+
+        <section class="home-projects panel-purple" aria-labelledby="home-projects-title">
+          <h2 id="home-projects-title">PROJECTS</h2>
+          <div class="home-project-list">
+            <article class="home-project-card">
+              <img src="assets/images/gachiakuta-poster-large.jpg" alt="Gachiakuta poster">
+              <h3>GACHIAKUTA POSTER</h3>
+            </article>
+            <article class="home-project-card">
+              <img src="assets/images/power-networking-flyer.jpg" alt="Power of networking flyer">
+              <h3>POWER OF NETWORK<br>FLYER</h3>
+            </article>
+            <article class="home-project-card">
+              <img src="assets/images/psycho-album-cover-large.jpg" alt="Psycho album cover">
+              <h3>PSYCHO ALBUM COVER</h3>
+            </article>
+          </div>
+        </section>
+
+        <section class="contact-panel contact-home panel-dark" aria-labelledby="home-contact-title">
+          <h2 id="home-contact-title">Contact</h2>
+          <form class="contact-form" action="#" method="post">
+            <label><span>Name</span><input name="name" placeholder="Name"></label>
+            <label><span>Email</span><input type="email" name="email" placeholder="Email"></label>
+            <label><span>Description</span><textarea name="description" placeholder="Description"></textarea></label>
+            <button type="submit">SEND</button>
+          </form>
+        </section>
+      </section>
+
+      <section class="page page-about" data-page="about" aria-labelledby="about-title" hidden>
+        <section class="title-band panel-purple">
+          <div class="title-with-hearts">
+            <div class="pixel-hearts hearts-left" aria-hidden="true"><span></span><span></span></div>
+            <h1 id="about-title">ABOUT</h1>
+            <div class="pixel-hearts hearts-right" aria-hidden="true"><span></span><span></span></div>
+          </div>
+        </section>
+        <section class="about-name panel-dark">
+          <h2>JADEN JOHNSON</h2>
+          <img src="assets/images/portrait.jpg" alt="Portrait of Jaden Johnson">
+        </section>
+        <section class="goals panel-purple">
+          <h2>Goals</h2>
+          <p>
+            My name is <strong>Jaden Johnson</strong>, my goal is to become a product designer and developer both front and little of back for websites and Mobile apps. I hope to learn more deeply in HTML, CSS, and JavaScript to upgrade my skills. My hobbies are learning to things that are going on in tech such as AI and how I can integrate it into my career and learning more deeply about ChatGPT, Claude Code, and other AI tools.
+          </p>
+        </section>
+        <section class="experience panel-dark">
+          <div>
+            <h2>EXPERIENCE</h2>
+            <h3>NYC Department of Education/<br>Division &amp; Info Technologies<br>Internship</h3>
+            <p>Created a posters, fliers, and banners for different teams, raised problems, and to bring overall awareness.</p>
+          </div>
+        </section>
+        <section class="education panel-purple">
+          <div>
+            <h2>EDUCATION</h2>
+            <h3>New York City College of Technology</h3>
+            <p>Learned deeply on design principles on how products and overall designs are made, improved, and curated.</p>
+            <h3>Cooperative Technical Learning</h3>
+            <p>Learned the fundamental of graphic design, video editing, and web design</p>
+          </div>
+        </section>
+        <section class="contact-panel panel-dark" aria-labelledby="about-contact-title">
+          <h2 id="about-contact-title">Contact</h2>
+          <form class="contact-form" action="#" method="post">
+            <label><span>Name</span><input name="name" placeholder="Name"></label>
+            <label><span>Email</span><input type="email" name="email" placeholder="Email"></label>
+            <label><span>Description</span><textarea name="description" placeholder="Description"></textarea></label>
+            <button type="submit">SEND</button>
+          </form>
+        </section>
+      </section>
+
+      <section class="page page-projects" data-page="projects" aria-labelledby="projects-title" hidden>
+        <section class="title-band panel-purple">
+          <div class="title-with-hearts projects-title-wrap">
+            <div class="pixel-hearts hearts-left" aria-hidden="true"><span></span><span></span></div>
+            <h1 id="projects-title">PROJECTS</h1>
+            <div class="pixel-hearts hearts-right" aria-hidden="true"><span></span><span></span></div>
+          </div>
+        </section>
+        <section class="projects-detail panel-dark">
+          <article class="project-row">
+            <img src="assets/images/gachiakuta-poster.jpg" alt="Gachiakuta poster">
+            <div>
+              <h2>GACHIAKUTA POSTER</h2>
+              <p>This Poster was inspired by the anime “GACHIAKUTA” the show really resonated with me and to show my appreciation to the anime I created a poster representing the main character named RUDO</p>
+            </div>
+          </article>
+          <article class="project-row project-row-flip">
+            <div>
+              <h2>POWER OF NETWORKING FLYER</h2>
+              <p>This flyer was for a workshop that is for interns to understand and learn how powerful and beneficial networking is.</p>
+            </div>
+            <img src="assets/images/power-networking-flyer.jpg" alt="Power of networking flyer">
+          </article>
+          <article class="project-row">
+            <img src="assets/images/psycho-album-cover.jpg" alt="Psycho album cover">
+            <div>
+              <h2>PSYCHO ALBUM COVER</h2>
+              <p>This flyer was for a workshop that is for interns to understand and learn how powerful and beneficial networking is.</p>
+            </div>
+          </article>
+        </section>
+        <section class="resume panel-purple">
+          <h2>RESUME</h2>
+          <a href="assets/Jaden-A-Johnson-Resume.pdf" aria-label="Open Jaden Johnson resume PDF">
+            <img src="assets/images/resume.jpg" alt="Jaden Johnson resume preview">
+          </a>
+        </section>
+        <section class="contact-panel panel-dark" aria-labelledby="projects-contact-title">
+          <h2 id="projects-contact-title">Contact</h2>
+          <form class="contact-form" action="#" method="post">
+            <label><span>Name</span><input name="name" placeholder="Name"></label>
+            <label><span>Email</span><input type="email" name="email" placeholder="Email"></label>
+            <label><span>Description</span><textarea name="description" placeholder="Description"></textarea></label>
+            <button type="submit">SEND</button>
+          </form>
+        </section>
+      </section>
+
+      <section class="page page-contact" data-page="contact" aria-labelledby="contact-title" hidden>
+        <section class="contact-standalone panel-purple">
+          <h1 id="contact-title">Contact</h1>
+          <form class="contact-form contact-large" action="#" method="post">
+            <label><span>Name</span><input name="name" placeholder="Name"></label>
+            <label><span>Email</span><input type="email" name="email" placeholder="Email"></label>
+            <label><span>Description</span><textarea name="description" placeholder="Description"></textarea></label>
+            <button type="submit">SEND</button>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/interactions.js"></script>
+  </body>
+</html>
