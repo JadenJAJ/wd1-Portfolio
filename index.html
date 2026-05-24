@@ -1,0 +1,1575 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jaden Johnson Portfolio</title>
+    <style>
+@font-face {
+  font-family: "Pixelify";
+  src: url("assets/PixelifySans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pixelify";
+  src: url("assets/PixelifySans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Play";
+  src: url("assets/Play-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Play";
+  src: url("assets/Play-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik Spray";
+  src: url("assets/RubikSprayPaint-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --black: #121212;
+  --purple: #6b0077;
+  --yellow: #ffdc39;
+  --pink: #ff13d2;
+  --white: #ffffff;
+  --muted: #858585;
+  --header-h: 101px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font-family: "Play", Arial, sans-serif;
+  cursor: none;
+}
+
+a,
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--header-h);
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px 0 25px;
+  font-family: "Pixelify", monospace;
+  font-weight: 700;
+}
+
+.brand {
+  font-size: 31px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+  padding-right: 34px;
+}
+
+.site-nav a {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.nav-link {
+  transition: color 160ms linear, transform 160ms linear;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--yellow);
+  transform: translateY(-1px);
+}
+
+.page[hidden] {
+  display: none;
+}
+
+.panel-dark {
+  background: var(--black);
+}
+
+.panel-purple {
+  background: var(--purple);
+}
+
+.purple-grid {
+  background-color: var(--purple);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.home-hero {
+  height: 494px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-inner {
+  width: 1220px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sonic {
+  position: absolute;
+  left: 37px;
+  bottom: 55px;
+  width: 145px;
+  image-rendering: pixelated;
+}
+
+.hero-title-wrap {
+  position: absolute;
+  top: 141px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 810px;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-title-wrap h1 {
+  font-family: "Pixelify", monospace;
+  font-size: 72px;
+  line-height: 0.95;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.hero-title-wrap p {
+  margin-top: 9px;
+  color: var(--yellow);
+  font-family: "Pixelify", monospace;
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.pixel-hearts {
+  position: absolute;
+  width: 92px;
+  height: 66px;
+  image-rendering: pixelated;
+}
+
+.pixel-hearts span {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #ff55b8;
+  transform: rotate(45deg);
+  box-shadow:
+    -8px -8px 0 #ff149e,
+    8px -8px 0 #ff8fce,
+    0 0 0 6px rgba(255,255,255,0.7) inset,
+    15px 15px 0 -8px #ffffff;
+}
+
+.pixel-hearts span::before,
+.pixel-hearts span::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: inherit;
+}
+
+.pixel-hearts span::before {
+  left: -15px;
+}
+
+.pixel-hearts span::after {
+  top: -15px;
+}
+
+.pixel-hearts span:nth-child(1) {
+  left: 6px;
+  top: 24px;
+  transform: rotate(45deg) scale(0.56);
+}
+
+.pixel-hearts span:nth-child(2) {
+  left: 44px;
+  top: 4px;
+  transform: rotate(45deg) scale(0.72);
+}
+
+.hearts-left {
+  left: 119px;
+  top: -22px;
+}
+
+.hearts-right {
+  right: 120px;
+  top: -22px;
+  transform: scaleX(-1);
+}
+
+.home-about {
+  min-height: 1067px;
+  padding-top: 86px;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.055) 1.5px, transparent 1.5px);
+  background-size: 31px 31px;
+}
+
+.home-about-grid {
+  width: 1128px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 450px 594px;
+  gap: 84px;
+  align-items: start;
+}
+
+.about-intro {
+  padding-top: 103px;
+  text-align: center;
+}
+
+.about-intro h2 {
+  color: var(--yellow);
+  font-family: "Pixelify", monospace;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 48px;
+}
+
+.about-intro p {
+  color: #ff00df;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.about-intro strong,
+.goals strong {
+  color: var(--yellow);
+}
+
+.pink-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  width: 226px;
+  height: 55px;
+  border-radius: 999px;
+  background: #ff00df;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.portrait-frame {
+  margin: 0;
+  width: 594px;
+  height: 780px;
+  border-radius: 112px;
+  overflow: hidden;
+  background: #cfcfcf;
+}
+
+.portrait-frame img,
+.about-name img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 52% 42%;
+}
+
+.home-projects {
+  padding: 189px 0 103px;
+  text-align: center;
+}
+
+.home-projects h2 {
+  color: var(--yellow);
+  font-family: "Pixelify", monospace;
+  font-size: 70px;
+  line-height: 1;
+  margin-bottom: 84px;
+}
+
+.home-project-list {
+  width: 892px;
+  margin: 0 auto;
+}
+
+.home-project-card {
+  margin-bottom: 126px;
+}
+
+.home-project-card img {
+  width: 892px;
+  height: auto;
+}
+
+.home-project-card:first-child img {
+  height: 1262px;
+  object-fit: cover;
+}
+
+.home-project-card:nth-child(2) img {
+  height: 1155px;
+  object-fit: cover;
+}
+
+.home-project-card:nth-child(3) img {
+  height: 892px;
+  object-fit: cover;
+}
+
+.home-project-card h3 {
+  margin-top: 34px;
+  color: var(--white);
+  font-family: "Rubik Spray", Impact, sans-serif;
+  font-size: 47px;
+  line-height: 1.06;
+  letter-spacing: 0;
+}
+
+.contact-panel {
+  min-height: 693px;
+  padding-top: 90px;
+  text-align: center;
+}
+
+.contact-home {
+  min-height: 674px;
+}
+
+.contact-panel h2,
+.contact-standalone h1 {
+  color: var(--yellow);
+  font-family: "Pixelify", monospace;
+  font-size: 61px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 55px;
+}
+
+.contact-form {
+  width: 734px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.contact-form label {
+  width: 100%;
+}
+
+.contact-form span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  background: var(--white);
+  color: var(--black);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  line-height: 1;
+  outline: 0;
+}
+
+.contact-form input {
+  height: 84px;
+  padding: 0 37px;
+}
+
+.contact-form textarea {
+  height: 190px;
+  resize: none;
+  padding: 29px 34px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #7e7e7e;
+  opacity: 1;
+}
+
+.contact-form button {
+  width: 343px;
+  height: 74px;
+  margin-top: 34px;
+  border: 0;
+  border-radius: 23px;
+  background: var(--yellow);
+  color: #000000;
+  font-family: "Rubik Spray", Impact, sans-serif;
+  font-size: 37px;
+  line-height: 1;
+  cursor: none;
+}
+
+.title-band {
+  height: 501px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-with-hearts {
+  position: relative;
+  min-width: 604px;
+  text-align: center;
+}
+
+.title-with-hearts h1 {
+  color: var(--yellow);
+  font-family: "Pixelify", monospace;
+  font-size: 78px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.title-with-hearts .hearts-left {
+  left: -6px;
+  top: -46px;
+}
+
+.title-with-hearts .hearts-right {
+  right: -14px;
+  top: -46px;
+}
+
+.about-name {
+  min-height: 1500px;
+  padding-top: 65px;
+  text-align: center;
+}
+
+.about-name h2 {
+  color: var(--yellow);
+  font-family: "Rubik Spray", Impact, sans-serif;
+  font-size: 83px;
+  line-height: 1;
+  margin-bottom: 60px;
+}
+
+.about-name img {
+  width: 799px;
+  height: 1211px;
+  margin: 0 auto;
+  background: #cfcfcf;
+}
+
+.goals {
+  min-height: 1109px;
+  padding-top: 151px;
+  text-align: center;
+}
+
+.goals h2,
+.experience h2,
+.education h2 {
+  color: var(--yellow);
+  font-family: "Pixelify", monospace;
+  font-size: 73px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.goals p {
+  width: 855px;
+  margin: 81px auto 0;
+  font-size: 41px;
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.experience {
+  min-height: 810px;
+  padding-top: 104px;
+}
+
+.experience div {
+  width: 720px;
+  margin-left: 74px;
+}
+
+.experience h3 {
+  margin-top: 32px;
+  font-family: "Play", Arial, sans-serif;
+  font-size: 41px;
+  line-height: 1.07;
+  font-weight: 700;
+}
+
+.experience p {
+  margin-top: 69px;
+  font-size: 38px;
+  line-height: 1.15;
+}
+
+.education {
+  min-height: 928px;
+  padding-top: 101px;
+  text-align: right;
+}
+
+.education div {
+  width: 900px;
+  margin-left: auto;
+  margin-right: 74px;
+}
+
+.education h3 {
+  margin-top: 40px;
+  font-size: 41px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.education p {
+  font-size: 38px;
+  line-height: 1.1;
+}
+
+.education h3:nth-of-type(2) {
+  margin-top: 126px;
+}
+
+.projects-detail {
+  padding: 98px 0 78px;
+}
+
+.project-row {
+  width: 1250px;
+  margin: 0 auto 238px;
+  display: grid;
+  grid-template-columns: 564px 1fr;
+  gap: 126px;
+  align-items: start;
+}
+
+.project-row img {
+  width: 564px;
+  height: auto;
+}
+
+.project-row:first-child img {
+  height: 798px;
+  object-fit: cover;
+}
+
+.project-row:nth-child(2) img {
+  width: 562px;
+  height: 728px;
+  object-fit: cover;
+}
+
+.project-row:nth-child(3) img {
+  width: 569px;
+  height: 569px;
+  object-fit: cover;
+}
+
+.project-row h2 {
+  color: var(--yellow);
+  font-family: "Rubik Spray", Impact, sans-serif;
+  font-size: 37px;
+  line-height: 1.05;
+  margin-top: 17px;
+}
+
+.project-row p {
+  width: 520px;
+  margin-top: 118px;
+  color: #e7e7e7;
+  font-size: 33px;
+  line-height: 1.04;
+  text-align: center;
+  font-weight: 700;
+}
+
+.project-row-flip {
+  grid-template-columns: 1fr 562px;
+  gap: 143px;
+}
+
+.project-row-flip h2 {
+  margin-top: 13px;
+  width: 470px;
+}
+
+.project-row-flip p {
+  margin-top: 118px;
+  width: 510px;
+  text-align: left;
+}
+
+.resume {
+  min-height: 1540px;
+  padding-top: 186px;
+  text-align: center;
+}
+
+.resume h2 {
+  color: var(--yellow);
+  font-family: "Pixelify", monospace;
+  font-size: 78px;
+  line-height: 1;
+  margin-bottom: 134px;
+}
+
+.resume img {
+  width: 849px;
+  height: 1101px;
+  margin: 0 auto;
+  object-fit: cover;
+  background: var(--white);
+}
+
+.contact-standalone {
+  min-height: calc(100vh - var(--header-h));
+  height: 923px;
+  padding-top: 63px;
+  text-align: center;
+}
+
+.contact-standalone h1 {
+  font-size: 117px;
+  margin-bottom: 77px;
+}
+
+.contact-large {
+  width: 600px;
+  gap: 51px;
+}
+
+.contact-large input {
+  height: 89px;
+  font-size: 48px;
+  padding-left: 37px;
+}
+
+.contact-large textarea {
+  height: 190px;
+  font-size: 47px;
+  padding: 24px 34px;
+}
+
+.contact-large button {
+  margin-top: 18px;
+  width: 343px;
+  height: 74px;
+  border-radius: 23px;
+}
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--yellow);
+  pointer-events: none;
+  mix-blend-mode: difference;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+.page {
+  animation: pageIn 280ms cubic-bezier(.22, .61, .36, 1) both;
+}
+
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sonic {
+  animation: sonicIdle 900ms steps(2, end) infinite;
+}
+
+@keyframes sonicIdle {
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.pixel-hearts span {
+  animation: heartBlink 820ms steps(2, end) infinite;
+}
+
+.pixel-hearts span:nth-child(2) {
+  animation-delay: 180ms;
+}
+
+@keyframes heartBlink {
+  50% {
+    filter: brightness(1.35);
+    transform: rotate(45deg) scale(.82);
+  }
+}
+
+.home-project-card img,
+.project-row img,
+.resume img,
+.portrait-frame,
+.about-name img {
+  transition: transform 180ms linear, filter 180ms linear;
+}
+
+.home-project-card:hover img,
+.project-row:hover img,
+.resume a:hover img,
+.portrait-frame:hover,
+.about-name img:hover {
+  transform: translateY(-5px);
+  filter: saturate(1.08);
+}
+
+.contact-form button,
+.pink-pill {
+  transition: transform 120ms linear, filter 120ms linear;
+}
+
+.contact-form button:hover,
+.pink-pill:hover {
+  transform: translateY(-2px) scale(1.01);
+  filter: brightness(1.03);
+}
+
+.contact-form button:active,
+.pink-pill:active {
+  transform: translateY(1px) scale(.99);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 450ms cubic-bezier(.22, .61, .36, 1), transform 450ms cubic-bezier(.22, .61, .36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --header-h: 35px;
+  }
+
+  body {
+    cursor: auto;
+  }
+
+  .cursor-dot {
+    display: none;
+  }
+
+  .site-header {
+    height: var(--header-h);
+    padding: 0 8px;
+  }
+
+  .brand {
+    font-size: 12px;
+  }
+
+  .site-nav {
+    gap: 21px;
+    padding-right: 0;
+  }
+
+  .site-nav a {
+    font-size: 12px;
+  }
+
+  .home-hero {
+    height: 135px;
+  }
+
+  .hero-inner {
+    width: 100%;
+  }
+
+  .sonic {
+    left: 31px;
+    bottom: 23px;
+    width: 58px;
+  }
+
+  .hero-title-wrap {
+    top: 51px;
+    width: 310px;
+  }
+
+  .hero-title-wrap h1 {
+    font-size: 31px;
+  }
+
+  .hero-title-wrap p {
+    margin-top: 3px;
+    font-size: 16px;
+  }
+
+  .pixel-hearts {
+    transform: scale(.48);
+  }
+
+  .hearts-left {
+    left: 17px;
+    top: -29px;
+  }
+
+  .hearts-right {
+    right: 15px;
+    top: -29px;
+    transform: scaleX(-1) scale(.48);
+  }
+
+  .home-about {
+    min-height: 309px;
+    padding-top: 28px;
+  }
+
+  .home-about-grid {
+    width: 350px;
+    grid-template-columns: 158px 166px;
+    gap: 26px;
+  }
+
+  .about-intro {
+    padding-top: 28px;
+  }
+
+  .about-intro h2 {
+    font-size: 25px;
+    margin-bottom: 17px;
+  }
+
+  .about-intro p {
+    font-size: 12px;
+    line-height: 1.04;
+  }
+
+  .pink-pill {
+    margin-top: 15px;
+    width: 88px;
+    height: 25px;
+    font-size: 8px;
+  }
+
+  .portrait-frame {
+    width: 166px;
+    height: 219px;
+    border-radius: 41px;
+  }
+
+  .home-projects {
+    padding: 59px 0 3px;
+  }
+
+  .home-projects h2 {
+    font-size: 33px;
+    margin-bottom: 35px;
+  }
+
+  .home-project-list {
+    width: 250px;
+  }
+
+  .home-project-card {
+    margin-bottom: 57px;
+  }
+
+  .home-project-card img,
+  .home-project-card:first-child img,
+  .home-project-card:nth-child(2) img,
+  .home-project-card:nth-child(3) img {
+    width: 250px;
+    height: auto;
+  }
+
+  .home-project-card:first-child img {
+    height: 354px;
+  }
+
+  .home-project-card:nth-child(2) img {
+    height: 324px;
+  }
+
+  .home-project-card:nth-child(3) img {
+    height: 250px;
+  }
+
+  .home-project-card h3 {
+    margin-top: 18px;
+    font-size: 19px;
+  }
+
+  .contact-panel {
+    min-height: 292px;
+    padding-top: 33px;
+  }
+
+  .contact-home {
+    min-height: 298px;
+  }
+
+  .contact-panel h2 {
+    font-size: 30px;
+    margin-bottom: 26px;
+  }
+
+  .contact-form {
+    width: 207px;
+    gap: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+  .contact-form input {
+    height: 30px;
+    padding: 0 13px;
+  }
+
+  .contact-form textarea {
+    height: 64px;
+    padding: 10px 13px;
+  }
+
+  .contact-form button {
+    width: 116px;
+    height: 25px;
+    margin-top: 0;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+
+  .title-band {
+    height: 174px;
+  }
+
+  .title-with-hearts {
+    min-width: 250px;
+  }
+
+  .title-with-hearts h1 {
+    font-size: 36px;
+  }
+
+  .title-with-hearts .hearts-left {
+    left: 24px;
+    top: -40px;
+  }
+
+  .title-with-hearts .hearts-right {
+    right: 24px;
+    top: -40px;
+  }
+
+  .about-name {
+    min-height: 520px;
+    padding-top: 22px;
+  }
+
+  .about-name h2 {
+    font-size: 31px;
+    margin-bottom: 20px;
+  }
+
+  .about-name img {
+    width: 277px;
+    height: 418px;
+  }
+
+  .goals {
+    min-height: 382px;
+    padding-top: 57px;
+  }
+
+  .goals h2,
+  .experience h2,
+  .education h2 {
+    font-size: 38px;
+  }
+
+  .goals p {
+    width: 340px;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  .experience {
+    min-height: 279px;
+    padding-top: 40px;
+  }
+
+  .experience div {
+    width: 330px;
+    margin-left: 24px;
+  }
+
+  .experience h3 {
+    margin-top: 11px;
+    font-size: 18px;
+  }
+
+  .experience p {
+    margin-top: 25px;
+    font-size: 16px;
+  }
+
+  .education {
+    min-height: 311px;
+    padding-top: 40px;
+  }
+
+  .education div {
+    width: 330px;
+    margin-right: 24px;
+  }
+
+  .education h3 {
+    margin-top: 14px;
+    font-size: 17px;
+  }
+
+  .education p {
+    font-size: 16px;
+  }
+
+  .education h3:nth-of-type(2) {
+    margin-top: 48px;
+  }
+
+  .projects-detail {
+    padding: 29px 0 22px;
+  }
+
+  .project-row,
+  .project-row-flip {
+    width: 348px;
+    margin-bottom: 82px;
+    grid-template-columns: 180px 1fr;
+    gap: 22px;
+  }
+
+  .project-row-flip {
+    grid-template-columns: 1fr 185px;
+    gap: 24px;
+  }
+
+  .project-row img,
+  .project-row:first-child img,
+  .project-row:nth-child(2) img,
+  .project-row:nth-child(3) img {
+    width: 186px;
+    height: auto;
+  }
+
+  .project-row:first-child img {
+    height: 263px;
+  }
+
+  .project-row:nth-child(2) img {
+    width: 185px;
+    height: 240px;
+  }
+
+  .project-row:nth-child(3) img {
+    width: 189px;
+    height: 189px;
+  }
+
+  .project-row h2,
+  .project-row-flip h2 {
+    width: auto;
+    margin-top: 4px;
+    font-size: 16px;
+  }
+
+  .project-row p,
+  .project-row-flip p {
+    width: auto;
+    margin-top: 38px;
+    font-size: 12px;
+    line-height: 1.08;
+  }
+
+  .project-row-flip p {
+    text-align: left;
+  }
+
+  .resume {
+    min-height: 532px;
+    padding-top: 66px;
+  }
+
+  .resume h2 {
+    font-size: 39px;
+    margin-bottom: 44px;
+  }
+
+  .resume img {
+    width: 280px;
+    height: 363px;
+  }
+
+  .contact-standalone {
+    height: calc(100vh - var(--header-h));
+    min-height: 600px;
+    padding-top: 101px;
+  }
+
+  .contact-standalone h1 {
+    font-size: 60px;
+    margin-bottom: 76px;
+  }
+
+  .contact-large {
+    width: 300px;
+    gap: 51px;
+  }
+
+  .contact-large input {
+    height: 45px;
+    font-size: 25px;
+    padding-left: 18px;
+  }
+
+  .contact-large textarea {
+    height: 95px;
+    font-size: 25px;
+    padding: 12px 18px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  body {
+    cursor: auto;
+  }
+
+  .cursor-dot {
+    display: none;
+  }
+
+  .home-about-grid,
+  .project-row {
+    transform: scale(.82);
+    transform-origin: top center;
+  }
+
+  .home-about {
+    min-height: 910px;
+  }
+
+  .projects-detail {
+    overflow: hidden;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand nav-link" href="#home" data-route="home">JADEN JOHNSON</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="#about" data-route="about">About</a>
+        <a class="nav-link" href="#projects" data-route="projects">Projects</a>
+        <a class="nav-link" href="#contact" data-route="contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="app" tabindex="-1">
+      <section class="page page-home" data-page="home" aria-labelledby="home-title">
+        <section class="home-hero purple-grid">
+          <div class="hero-inner">
+            <img class="sonic" src="assets/sonic.gif" alt="Pixel Sonic character">
+            <div class="hero-title-wrap">
+              <div class="pixel-hearts hearts-left" aria-hidden="true"><span></span><span></span></div>
+              <h1 id="home-title">JADEN JOHNSON</h1>
+              <div class="pixel-hearts hearts-right" aria-hidden="true"><span></span><span></span></div>
+              <p>GRAPHIC DESIGN PORTFOLIO</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="home-about panel-dark">
+          <div class="home-about-grid">
+            <article class="about-intro">
+              <h2>ABOUT ME</h2>
+              <p>
+                My name is <strong>Jaden Johnson</strong>, my goal is to become a product designer and developer both front and little of back for websites and Mobile apps. I hope to learn more deeply in HTML, CSS, and JavaScript to upgrade my skills. My hobbies are learning to things that are going on in tech such as AI and how I can integrate it into my career and learning more deeply about ChatGPT, Claude Code, and other AI tools.
+              </p>
+              <a class="pink-pill" href="#about" data-route="about">VIEW MORE</a>
+            </article>
+            <figure class="portrait-frame">
+              <img src="assets/portrait.jpg" alt="Portrait of Jaden Johnson">
+            </figure>
+          </div>
+        </section>
+
+        <section class="home-projects panel-purple" aria-labelledby="home-projects-title">
+          <h2 id="home-projects-title">PROJECTS</h2>
+          <div class="home-project-list">
+            <article class="home-project-card">
+              <img src="assets/gachiakuta-poster-large.jpg" alt="Gachiakuta poster">
+              <h3>GACHIAKUTA POSTER</h3>
+            </article>
+            <article class="home-project-card">
+              <img src="assets/power-networking-flyer.jpg" alt="Power of networking flyer">
+              <h3>POWER OF NETWORK<br>FLYER</h3>
+            </article>
+            <article class="home-project-card">
+              <img src="assets/psycho-album-cover-large.jpg" alt="Psycho album cover">
+              <h3>PSYCHO ALBUM COVER</h3>
+            </article>
+          </div>
+        </section>
+
+        <section class="contact-panel contact-home panel-dark" aria-labelledby="home-contact-title">
+          <h2 id="home-contact-title">Contact</h2>
+          <form class="contact-form" action="#" method="post">
+            <label><span>Name</span><input name="name" placeholder="Name"></label>
+            <label><span>Email</span><input type="email" name="email" placeholder="Email"></label>
+            <label><span>Description</span><textarea name="description" placeholder="Description"></textarea></label>
+            <button type="submit">SEND</button>
+          </form>
+        </section>
+      </section>
+
+      <section class="page page-about" data-page="about" aria-labelledby="about-title" hidden>
+        <section class="title-band panel-purple">
+          <div class="title-with-hearts">
+            <div class="pixel-hearts hearts-left" aria-hidden="true"><span></span><span></span></div>
+            <h1 id="about-title">ABOUT</h1>
+            <div class="pixel-hearts hearts-right" aria-hidden="true"><span></span><span></span></div>
+          </div>
+        </section>
+        <section class="about-name panel-dark">
+          <h2>JADEN JOHNSON</h2>
+          <img src="assets/portrait.jpg" alt="Portrait of Jaden Johnson">
+        </section>
+        <section class="goals panel-purple">
+          <h2>Goals</h2>
+          <p>
+            My name is <strong>Jaden Johnson</strong>, my goal is to become a product designer and developer both front and little of back for websites and Mobile apps. I hope to learn more deeply in HTML, CSS, and JavaScript to upgrade my skills. My hobbies are learning to things that are going on in tech such as AI and how I can integrate it into my career and learning more deeply about ChatGPT, Claude Code, and other AI tools.
+          </p>
+        </section>
+        <section class="experience panel-dark">
+          <div>
+            <h2>EXPERIENCE</h2>
+            <h3>NYC Department of Education/<br>Division &amp; Info Technologies<br>Internship</h3>
+            <p>Created a posters, fliers, and banners for different teams, raised problems, and to bring overall awareness.</p>
+          </div>
+        </section>
+        <section class="education panel-purple">
+          <div>
+            <h2>EDUCATION</h2>
+            <h3>New York City College of Technology</h3>
+            <p>Learned deeply on design principles on how products and overall designs are made, improved, and curated.</p>
+            <h3>Cooperative Technical Learning</h3>
+            <p>Learned the fundamental of graphic design, video editing, and web design</p>
+          </div>
+        </section>
+        <section class="contact-panel panel-dark" aria-labelledby="about-contact-title">
+          <h2 id="about-contact-title">Contact</h2>
+          <form class="contact-form" action="#" method="post">
+            <label><span>Name</span><input name="name" placeholder="Name"></label>
+            <label><span>Email</span><input type="email" name="email" placeholder="Email"></label>
+            <label><span>Description</span><textarea name="description" placeholder="Description"></textarea></label>
+            <button type="submit">SEND</button>
+          </form>
+        </section>
+      </section>
+
+      <section class="page page-projects" data-page="projects" aria-labelledby="projects-title" hidden>
+        <section class="title-band panel-purple">
+          <div class="title-with-hearts projects-title-wrap">
+            <div class="pixel-hearts hearts-left" aria-hidden="true"><span></span><span></span></div>
+            <h1 id="projects-title">PROJECTS</h1>
+            <div class="pixel-hearts hearts-right" aria-hidden="true"><span></span><span></span></div>
+          </div>
+        </section>
+        <section class="projects-detail panel-dark">
+          <article class="project-row">
+            <img src="assets/gachiakuta-poster.jpg" alt="Gachiakuta poster">
+            <div>
+              <h2>GACHIAKUTA POSTER</h2>
+              <p>This Poster was inspired by the anime &quot;GACHIAKUTA&quot; the show really resonated with me and to show my appreciation to the anime I created a poster representing the main character named RUDO</p>
+            </div>
+          </article>
+          <article class="project-row project-row-flip">
+            <div>
+              <h2>POWER OF NETWORKING FLYER</h2>
+              <p>This flyer was for a workshop that is for interns to understand and learn how powerful and beneficial networking is.</p>
+            </div>
+            <img src="assets/power-networking-flyer.jpg" alt="Power of networking flyer">
+          </article>
+          <article class="project-row">
+            <img src="assets/psycho-album-cover.jpg" alt="Psycho album cover">
+            <div>
+              <h2>PSYCHO ALBUM COVER</h2>
+              <p>This flyer was for a workshop that is for interns to understand and learn how powerful and beneficial networking is.</p>
+            </div>
+          </article>
+        </section>
+        <section class="resume panel-purple">
+          <h2>RESUME</h2>
+          <a href="assets/Jaden-A-Johnson-Resume.pdf" aria-label="Open Jaden Johnson resume PDF">
+            <img src="assets/resume.jpg" alt="Jaden Johnson resume preview">
+          </a>
+        </section>
+        <section class="contact-panel panel-dark" aria-labelledby="projects-contact-title">
+          <h2 id="projects-contact-title">Contact</h2>
+          <form class="contact-form" action="#" method="post">
+            <label><span>Name</span><input name="name" placeholder="Name"></label>
+            <label><span>Email</span><input type="email" name="email" placeholder="Email"></label>
+            <label><span>Description</span><textarea name="description" placeholder="Description"></textarea></label>
+            <button type="submit">SEND</button>
+          </form>
+        </section>
+      </section>
+
+      <section class="page page-contact" data-page="contact" aria-labelledby="contact-title" hidden>
+        <section class="contact-standalone panel-purple">
+          <h1 id="contact-title">Contact</h1>
+          <form class="contact-form contact-large" action="#" method="post">
+            <label><span>Name</span><input name="name" placeholder="Name"></label>
+            <label><span>Email</span><input type="email" name="email" placeholder="Email"></label>
+            <label><span>Description</span><textarea name="description" placeholder="Description"></textarea></label>
+            <button type="submit">SEND</button>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <script>
+(function () {
+  const pages = Array.from(document.querySelectorAll("[data-page]"));
+  const links = Array.from(document.querySelectorAll("[data-route]"));
+  const app = document.querySelector("#app");
+  const routes = new Set(pages.map((page) => page.dataset.page));
+
+  function routeFromHash() {
+    const route = window.location.hash.replace("#", "") || "home";
+    return routes.has(route) ? route : "home";
+  }
+
+  function showRoute(route, shouldFocus) {
+    pages.forEach((page) => {
+      page.hidden = page.dataset.page !== route;
+    });
+
+    links.forEach((link) => {
+      const active = link.dataset.route === route;
+      link.classList.toggle("active", active);
+      if (active) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+
+    window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+    document.body.dataset.currentPage = route;
+    document.dispatchEvent(new CustomEvent("portfolio:routechange", { detail: { route } }));
+
+    if (shouldFocus) {
+      app.focus({ preventScroll: true });
+    }
+  }
+
+  window.addEventListener("hashchange", () => showRoute(routeFromHash(), true));
+  showRoute(routeFromHash(), false);
+})();
+
+(function () {
+  const revealSelector = [
+    ".about-intro",
+    ".portrait-frame",
+    ".home-project-card",
+    ".contact-form",
+    ".about-name img",
+    ".goals p",
+    ".experience div",
+    ".education div",
+    ".project-row",
+    ".resume img"
+  ].join(",");
+
+  let observer;
+
+  function bindReveals() {
+    if (observer) {
+      observer.disconnect();
+    }
+
+    const items = Array.from(document.querySelectorAll(revealSelector))
+      .filter((item) => !item.closest(".page[hidden]"));
+
+    items.forEach((item) => {
+      item.classList.add("reveal");
+      item.classList.remove("is-visible");
+    });
+
+    observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.18, rootMargin: "0px 0px -8% 0px" });
+
+    items.forEach((item) => observer.observe(item));
+  }
+
+  document.addEventListener("portfolio:routechange", bindReveals);
+  bindReveals();
+})();
+
+(function () {
+  const cursor = document.querySelector(".cursor-dot");
+  const formMessages = new WeakMap();
+
+  if (cursor && window.matchMedia("(pointer: fine)").matches) {
+    let x = 0;
+    let y = 0;
+    let tx = 0;
+    let ty = 0;
+
+    window.addEventListener("pointermove", (event) => {
+      tx = event.clientX;
+      ty = event.clientY;
+      cursor.style.opacity = "1";
+    });
+
+    function tick() {
+      x += (tx - x) * 0.35;
+      y += (ty - y) * 0.35;
+      cursor.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+      requestAnimationFrame(tick);
+    }
+
+    tick();
+  }
+
+  document.addEventListener("submit", (event) => {
+    const form = event.target.closest(".contact-form");
+    if (!form) return;
+    event.preventDefault();
+
+    const button = form.querySelector("button");
+    const previous = formMessages.get(form);
+    if (previous) {
+      clearTimeout(previous);
+    }
+
+    const originalText = button.textContent;
+    button.textContent = "SENT";
+    button.disabled = true;
+
+    const timer = window.setTimeout(() => {
+      button.textContent = originalText;
+      button.disabled = false;
+      form.reset();
+    }, 1100);
+
+    formMessages.set(form, timer);
+  });
+})();
+
+    </script>
+  </body>
+</html>
